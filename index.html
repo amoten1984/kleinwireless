@@ -7,6 +7,12 @@
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="I5hH8mxRqzS8mXQ4uSm44Rw_IB4gEQfSUQF" />
 
+    <!-- Resource Hints for PageSpeed -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
     <!-- Primary SEO Meta Tags -->
     <title>Expert Cellphone Repair Houston | Klein Wireless Phone Repair</title>
     <meta name="description" content="Houston's premier tech repair center. Klein Wireless Phone Repair offers expert iPhone, Samsung, and Pixel repair services near Beltway 8 and Veterans Memorial Dr.">
@@ -17,7 +23,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://irepairall.co/">
     <meta property="og:title" content="Expert Cellphone Repair Houston | Klein Wireless Phone Repair">
-    <meta property="og:description" content="Professional iPhone, Samsung, and Computer repair services in North Houston. Established 1998. Quick, reliable tech solutions.">
+    <meta property="og:description" content="Professional iPhone, Samsung, and Computer repair services in North Houston. Established 1998. Quick, reliable tech solutions at Klein Wireless Phone Repair.">
     <meta property="og:image" content="https://kleinwirelessphonerepair.setmore.com/logo.png">
 
     <!-- Twitter -->
@@ -47,8 +53,12 @@
         nav { min-height: 64px; }
         #live-indicator { display: none; }
         
+        /* Optimized team section styling */
         .tech-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .tech-card:hover { transform: scale(1.02); }
+        
+        /* Prevent CLS on live indicator */
+        .indicator-container { min-height: 32px; display: flex; align-items: center; justify-content: flex-end; }
     </style>
 
     <!-- Backend Local SEO Schema -->
@@ -125,12 +135,14 @@
                     
                     <!-- Lead Generation Form -->
                     <div id="quote" class="mt-16 lg:mt-0 bg-white p-8 rounded-[2.5rem] shadow-2xl border border-slate-100">
-                        <div class="flex items-center justify-between mb-8 h-8">
+                        <div class="flex items-center justify-between mb-8">
                             <h3 class="text-2xl font-black text-slate-900 tracking-tight">Instant Quote</h3>
-                            <span id="live-indicator" class="items-center text-green-600 text-xs font-bold uppercase tracking-widest">
-                                <span class="flex h-2.5 w-2.5 rounded-full bg-green-500 mr-2 animate-pulse"></span>
-                                Live Specialist
-                            </span>
+                            <div class="indicator-container">
+                                <span id="live-indicator" class="items-center text-green-600 text-xs font-bold uppercase tracking-widest">
+                                    <span class="flex h-2.5 w-2.5 rounded-full bg-green-500 mr-2 animate-pulse"></span>
+                                    Live Specialist
+                                </span>
+                            </div>
                         </div>
                         <form id="whatsappForm" class="space-y-5">
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -168,16 +180,16 @@
                     <div class="tech-card bg-slate-50 p-8 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center">
                         <div class="relative mb-6">
                             <div class="absolute inset-0 bg-blue-100 rounded-full scale-110 -rotate-6"></div>
-                            <img src="Bilal.jpeg" alt="Bilal - Repair Specialist at Klein Wireless Phone Repair" class="relative w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg grayscale hover:grayscale-0 transition-all duration-500">
+                            <img src="Bilal.jpeg" width="192" height="192" decoding="async" loading="lazy" alt="Bilal - Repair Specialist at Klein Wireless Phone Repair" class="relative w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg grayscale hover:grayscale-0 transition-all duration-500">
                             <div class="absolute bottom-2 right-2 bg-blue-600 text-white p-3 rounded-full shadow-lg">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                             </div>
                         </div>
                         <h3 class="text-2xl font-black text-slate-900 mb-1">Bilal</h3>
                         <p class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-4">CS Specialist & Foodie</p>
                         <div class="space-y-3 text-slate-600 text-sm leading-relaxed">
                             <p>Currently crushing <strong>Computer Science at Lamar University</strong>, Bilal brings logic-driven precision to every repair. When he isn't debugging code or logic boards, he’s probably hunting for the best eats in Houston.</p>
-                            <p class="bg-blue-100/50 p-3 rounded-2xl italic font-medium">"Be warned: He's incredibly great with repairs, but even better at chatting your ear off!"</p>
+                            <p class="bg-blue-100/50 p-3 rounded-2xl italic font-medium text-slate-700">"Be warned: He's incredibly great with repairs, but even better at chatting your ear off!"</p>
                         </div>
                     </div>
 
@@ -185,16 +197,16 @@
                     <div class="tech-card bg-slate-50 p-8 rounded-[3rem] shadow-xl border border-slate-100 flex flex-col items-center text-center">
                         <div class="relative mb-6">
                             <div class="absolute inset-0 bg-amber-100 rounded-full scale-110 rotate-6"></div>
-                            <img src="Abdul.jpeg" alt="Abdul - The Big Boss at Klein Wireless Phone Repair" class="relative w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg grayscale hover:grayscale-0 transition-all duration-500">
+                            <img src="Abdul.jpeg" width="192" height="192" decoding="async" loading="lazy" alt="Abdul - The Big Boss at Klein Wireless Phone Repair" class="relative w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg grayscale hover:grayscale-0 transition-all duration-500">
                             <div class="absolute bottom-2 right-2 bg-amber-500 text-white p-3 rounded-full shadow-lg">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                             </div>
                         </div>
                         <h3 class="text-2xl font-black text-slate-900 mb-1">Abdul (The Big Boss)</h3>
                         <p class="text-amber-600 font-bold text-xs uppercase tracking-widest mb-4">The Founding Legend</p>
                         <div class="space-y-3 text-slate-600 text-sm leading-relaxed">
                             <p>The man who started it all at the <strong>Greenspoint</strong> store. Abdul is a speed demon—officially the fastest technician in Houston. He’s a family man with 4 kids and a beard that has its own zip code.</p>
-                            <p class="bg-amber-100/50 p-3 rounded-2xl italic font-medium">"He speaks surprisingly fluent Spanish and is always ready with a joke while he fixes your phone in record time."</p>
+                            <p class="bg-amber-100/50 p-3 rounded-2xl italic font-medium text-slate-700">"He speaks surprisingly fluent Spanish and is always ready with a joke while he fixes your phone in record time."</p>
                         </div>
                     </div>
                 </div>
@@ -247,7 +259,7 @@
                         </a>
                     </div>
                     <div class="mt-12 lg:mt-0 rounded-[3rem] overflow-hidden shadow-2xl h-[400px] bg-slate-800 border border-slate-700">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.357264698599!2d-95.46092379999999!3d29.94040069999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c93b8b08bd61%3A0x8a3b11cf70ca4aeb!2sKlein%20Wireless%20Phone%20Repair!5e0!3m2!1sen!2sca!4v1772238626356!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.357264698599!2d-95.46092379999999!3d29.94040069999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c93b8b08bd61%3A0x8a3b11cf70ca4aeb!2sKlein%20Wireless%20Phone%20Repair!5e0!3m2!1sen!2sca!4v1772238626356!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Klein Wireless Phone Repair Houston Map"></iframe>
                     </div>
                 </div>
             </div>
