@@ -75,22 +75,25 @@
 </head>
 <body class="bg-white text-slate-900">
 
-    <!-- Navigation with Standardized Anchor Text Titles -->
+    <!-- Navigation with Optimized Mobile Header -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 md:h-20 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="/" title="Klein Wireless Phone Repair - Home" class="text-lg md:text-xl font-extrabold tracking-tight text-blue-600 uppercase">
-                        KLEIN WIRELESS<span class="text-slate-900 ml-1">PHONE REPAIR</span>
+                <div class="flex-shrink-0 flex items-center overflow-hidden mr-2">
+                    <a href="/" title="Klein Wireless Phone Repair - Home" class="text-sm md:text-xl font-extrabold tracking-tight text-blue-600 uppercase whitespace-nowrap">
+                        KLEIN WIRELESS<span class="text-slate-900 ml-1 hidden xs:inline">PHONE REPAIR</span>
                     </a>
                 </div>
+                
                 <div class="hidden lg:flex space-x-8 font-medium text-slate-600 text-sm">
                     <a href="#services" title="Klein Wireless Phone Repair Services" class="hover:text-blue-600 transition">Services</a>
                     <a href="#local" title="Klein Wireless Phone Repair Location Houston" class="hover:text-blue-600 transition">Location</a>
                 </div>
+
                 <div class="flex items-center">
-                    <a href="tel:8322491111" onclick="gtag('event', 'phone_call_click', {'location': 'nav'});" title="Call Klein Wireless Phone Repair" class="inline-flex items-center px-4 py-2 md:px-6 md:py-3 border border-transparent text-sm md:text-base font-bold rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition">
-                        832-249-1111
+                    <a href="tel:8322491111" onclick="gtag('event', 'phone_call_click', {'location': 'nav'});" title="Call Klein Wireless Phone Repair" class="inline-flex items-center px-3 py-2 md:px-6 md:py-3 border border-transparent text-sm md:text-base font-bold rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition">
+                        <svg class="w-4 h-4 md:mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        <span class="hidden md:inline">832-249-1111</span>
                     </a>
                 </div>
             </div>
