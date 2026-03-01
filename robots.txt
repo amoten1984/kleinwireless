@@ -1,1 +1,10 @@
-robots.txt for https://irepairall.co/Optimized for Klein Wireless Phone RepairUser-agent: *Allow: /Direct crawlers to your sitemap to ensure all content is indexedSitemap: https://www.google.com/search?q=https://irepairall.co/sitemap.xml
+# Klein Wireless Phone Repair - SEO Optimization
+User-agent: *
+Allow: /
+
+# Prevent crawling of common temporary or administrative paths (if any)
+Disallow: /cgi-bin/
+Disallow: /temp/
+
+# Sitemaps (Critical for Local SEO discovery)
+Sitemap: https://irepairall.co/sitemap.xml
